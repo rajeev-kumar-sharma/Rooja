@@ -257,6 +257,7 @@ a {
 	display: none;
 	opacity: 0.9;
 	width: 450px;
+    top: 52px;
 }
 
 .main_menu > ul > li:hover > .sub_menu {
@@ -695,6 +696,45 @@ footer {
 	color: #4F3059;
 }
 
+.whats_hot_container {
+    position: relative;
+}
+
+.whats_hot_viewport {
+	overflow: hidden;
+    padding: 25px;
+}
+
+.whats_hot_viewport ul {
+    width: 2500%;
+}
+
+.whats_hot_viewport ul li {
+    font: 14px Arial;
+    float: left;
+    margin-right: 20px;    
+}
+
+.whats_hot_container .prev {
+	background: url("../images/main_sprite.png") no-repeat -337px -45px;
+	width: 11px;
+	height: 21px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+}
+
+.whats_hot_container .next {
+	background: url("../images/main_sprite.png") no-repeat -348px -45px;
+	width: 11px;
+	height: 21px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+}
+
 #prod_category ul li {
 	width: 49.7%;
 	display:inline-block;
@@ -759,7 +799,7 @@ footer {
 	background-color: #ECECEC;
 	display: inline;
 	height: 150px;
-	
+	cursor: pointer;
 }
 
 .services_offered > ul > li:hover{
@@ -888,6 +928,8 @@ footer {
     padding: 3px 15px;
     position: absolute;
     right: 0;
+    top: 40%;
+    cursor: pointer;
 }
 
 .twitter_button:hover {
@@ -902,14 +944,44 @@ footer {
 	overflow: hidden;
 }
 
+.slider_viewport ul {
+    width: 2500%;
+}
+
+.slider_viewport ul li {
+    font: 14px Arial;
+    float: left;    
+}
+
+.slider_viewport ul li a {
+    text-transform: lowercase;
+    color: #6c6b6b;
+}
+
 .slider_container .prev {
-	background: url("../images/main_sprite.png") no-repeat  -285px -66px;;
-	width: 47px;
-	height: 86px;
-	display: none;
-	top: 40%;
+	background: url("../images/main_sprite.png") no-repeat -146px -168px;
+	width: 19px;
+	height: 19px;
+    display: block;
+    position: absolute;
+    left: -25px;	
+    top: 20%;
 }
 
 .slider_container .next {
-	
+	background: url("../images/main_sprite.png") no-repeat -165px -168px;
+	width: 19px;
+	height: 19px;
+    display: block;
+    position: absolute;
+    right: -25px;
+    top: 20%;
+}
+
+.slider_container .prev:hover {
+	background: url("../images/main_sprite.png") no-repeat -146px -187px;		
+}
+
+.slider_container .next:hover {
+	background: url("../images/main_sprite.png") no-repeat -165px -187px;
 }
