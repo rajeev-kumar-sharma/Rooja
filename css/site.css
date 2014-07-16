@@ -256,17 +256,58 @@ a {
 	left: 0px;
 	display: none;
 	opacity: 0.9;
-	width: 450px;
+	width: 525px;
     top: 52px;
 }
 
 .main_menu > ul > li:hover > .sub_menu {
 	display: inline-flex;
+    font-size: 14px;
+    font-family: Georgia;
+    font-style: italic;
+}
+
+.sub_menu ul li a {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    line-height: 14px;
+    font-weight: normal;
+    display: block;
+}
+
+.sub_menu ul li a:hover {
+    border: 2px solid #FFF;
+    padding: 4px 10px;
+}
+
+.sub_menu ul li span {
+    color: #e1e1e1;
+    font-style: italic;
+    text-transform: none;
+}
+
+.sub_menu ul .sub_menu_head span {
+    color: #000;
+}
+
+.sub_menu ul .sub_menu_head {
+    font-size: 14px;
+    font-family: Georgia;
+    font-style: italic;
+    padding: 10px 12px 12px;
+}
+
+.sub_menu ul li strong {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .sub_menu ul li {
 	line-height: 15px;
 	float: none;
+    margin: 0px 8px;
 }
 
 .sub_menu {
@@ -274,8 +315,21 @@ a {
 }
 
 .sub_menu ul {
-	width: 150px;
+	width: 175px;
     padding: 2px 0px 10px;
+}
+
+.view_all {
+    text-transform: uppercase;
+    border-top: 2px solid #bd7226;
+    margin: 5px 0px;
+    font-style: italic;
+    padding: 5px 20px 10px;
+}
+
+.sub_menu ul .view_all a:hover {
+    border: none;
+    text-decoration: underline;
 }
 
 .gender_tool {
