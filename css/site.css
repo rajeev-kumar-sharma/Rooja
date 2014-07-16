@@ -275,6 +275,7 @@ a {
 
 .sub_menu ul {
 	width: 150px;
+    padding: 2px 0px 10px;
 }
 
 .gender_tool {
@@ -735,6 +736,38 @@ footer {
     top: 50%;
 }
 
+.quickbox {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.dot_nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dot_nav a {
+	background: url("../images/main_sprite.png") no-repeat -372px -45px;
+	width: 13px;
+	height: 12px;
+    display: inline-block;
+}
+
+.rupees {
+    background: url("../images/main_sprite.png") no-repeat -494px -30px;
+    width: 8px;
+    height: 12px;
+    display: inline-block;
+}
+
+#offer .rupees {
+    background: url("../images/main_sprite.png") no-repeat -476px -30px;
+}
+
+.dot_nav a:hover, .dot_nav a:active {
+    background: url("../images/main_sprite.png") no-repeat -359px -45px;
+}
+
 #prod_category ul li {
 	width: 49.7%;
 	display:inline-block;
@@ -757,7 +790,8 @@ footer {
 }
 
 .prod_left span, .prod_righttop span, .prod_rightbottom span {
-	background: url("../images/prod_bg.png") repeat;
+	background-color: #000;
+    opacity: 0.7;
 	position:absolute;
 	left: 0px;
 	bottom: 5px;
@@ -767,7 +801,7 @@ footer {
 }
 
 .prod_left:hover span, .prod_righttop:hover span, .prod_rightbottom:hover span {
-	/*background-color: #CF7C23;*/
+	background-color: #CF7C23;
 }
 
 .explore_more {
