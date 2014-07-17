@@ -319,6 +319,10 @@ a {
     padding: 2px 0px 10px;
 }
 
+#clothes .sub_menu {
+    width: 350px;
+}
+
 .view_all {
     text-transform: uppercase;
     border-top: 2px solid #bd7226;
