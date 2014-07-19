@@ -4,7 +4,7 @@ body {
 }
 
 header {
-	background-color: #EDE6ED;
+	background-color: #EDE6ED; 
 }
 
 ul {
@@ -31,12 +31,12 @@ a {
 	margin: auto;
 }
 
-.top ul {
+.top ul, .top768 ul {
 	display: table;
 	width: 100%;
 }
 
-.top ul li{
+.top ul li , .top780 ul{
 	display: table-cell;
 	font-size: 13px;
     	line-height: 24px;
@@ -45,8 +45,16 @@ a {
 	text-align: right;
 }
 
-.top ul li:first-child {
+.top ul li:first-child, .top768 ul li:first-child, .top480 ul li:first-child {
 	text-align: left;
+}
+
+.top768 {
+    display: none;
+}
+
+.top480 {
+    display: none;
 }
 
 .seedetails {
@@ -670,6 +678,10 @@ footer {
 	width: 150px;
 }
 
+section {
+    
+}
+
 #offer .offerselect:hover {
 	background-color: #000;
 }
@@ -689,12 +701,23 @@ footer {
 }
 
 #latest_sales ul .topblk {
-	width: 49.7%;
+	width: 24%;
 	position: relative;
+    margin-left: .5%;
 }
+
+#latest_sales ul .topblk img {
+    width: 100%;
+}
+
+#latest_sales ul .mdblk img {
+    width: 100%;
+}
+
 #latest_sales ul .mdblk {
-	width: 24.64%;
+	width: 24%;
 	position:relative;
+    margin-left: .5%;
 }
 
 .topblk span {
@@ -1077,3 +1100,55 @@ footer {
 .slider_container .next:hover {
 	background: url("../images/main_sprite.png") no-repeat -165px -187px;
 }
+
+
+
+/************************* Responsive Design **************************/
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    
+}
+
+@media only screen and (min-width: 680px) {
+
+    
+}
+
+@media only screen and (min-width: 480px) {
+
+    #latest_sales ul .topblk {
+        width: 49%;
+    }
+}
+
+
+@media only screen and (min-width: 640px) and  (max-width: 755px) {
+    #latest_sales ul .mdblk {
+        margin-left: 0.45%;
+    }
+    
+}
+
+@media only screen and (max-width: 639px) {
+    #latest_sales ul .mdblk {
+        width: 49%;
+        margin-left: 0.5%;
+    }
+        
+}
+
+@media only screen and (max-width: 479px)
+{
+    #latest_sales ul .topblk {
+        width: 100%;
+        margin: 0px;
+    }
+    #latest_sales ul .mdblk {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+
+
