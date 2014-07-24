@@ -612,7 +612,7 @@ footer {
 }
 
 .topmost ul {
-	width: 500%;
+	width: 5000px;
 }
 
 
@@ -1094,7 +1094,7 @@ section {
 }
 
 .slider_viewport ul {
-    width: 2500%;
+    width: 5000px;
 }
 
 .slider_viewport ul li {
@@ -1261,6 +1261,26 @@ section {
         border-bottom: 1px dotted #431f4c;
         padding: 10px;
     }
+    #foot_list {
+    text-align: center;
+}
+    #foot_list > ul {
+    display: inline-block;
+    width: 100%;
+}
+    #foot_list ul li {
+    display: inline;
+}
+    #foot_list ul li a {
+    margin: 10px;
+}
+    #foot_list ul h4 {
+    text-align: left;
+}
+    #foot_list .contact_details:last-child li {
+    display: block;
+    margin-left: 0px;
+}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 950px)
@@ -1286,3 +1306,13 @@ section {
 }
 }
 
+@media only screen and (max-width: 767px)
+{
+    .services_offered ul li {
+        width: 100%;
+        margin-top: 10px;
+}
+    .services_offered h3 {
+        padding-top: 15px;
+}
+}
